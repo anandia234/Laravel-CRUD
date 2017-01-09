@@ -1,0 +1,49 @@
+Petunjuk Penggunan LaravelApp
+
+KONSEP DAN IMPLEMENTASI PEMROGRAMAN LARAVEL 5
+
+1. Copy-kan folder laravelapp ke web server Anda (folder www atau htdocs).
+
+2. Tambahkan Virtual Host di Apache:
+    
+<VirtualHost *:80>
+DocumentRoot C:/wamp/www/laravelapp/public    
+ServerName laravelapp.dev
+</VirtualHost>
+    
+3.  Tambahkan entry berikut di file C:/Windows/System32/drivers/etc/hosts
+127.0.0.1       laravelapp.dev
+
+4.  Import File databasenya (db_laravelapp.sql)
+
+5.  Menjalankan aplikasi: 
+    http://laravelapp.dev           (all user)
+    http://laravelapp.dev/siswa     (all user)
+    http://laravelapp.dev/about     (all user)
+    http://laravelapp.dev/kelas     (operator / admin)
+    http://laravelapp.dev/hobi      (operator / admin)
+    http://laravelapp.dev/user      (admin)
+
+6.  Login:
+
+Username                    Password                Level
+-----------------------------------------------------------------------
+admin@laravelapp.dev        adminpassword           admin
+operator@laravelapp.dev     operatorpassword        operator
+taylor@laravelapp.dev       taylorpassword          operator
+
+
+Note: 
+
+- Untuk No. 2 dan No. 3 (untuk lebih jelasnya bisa dibaca pada Bab 3 di buku)
+- Apabila Anda ingin menggunakan program paket server (Apache, PHP, MySQL) yang sama dengan di buku, yaitu WAMP Server 2.5, silahkan download di:
+
+http://tbf.me/a/BpePRA
+
+
+
+Salam Hangat,
+
+Awan Pribadi Basuki
+awan_pribadi@yahoo.com 
+ 
